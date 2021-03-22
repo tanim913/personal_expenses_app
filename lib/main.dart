@@ -31,7 +31,7 @@ class MyHomePage extends StatelessWidget {
               elevation: 7,
             ),
           ),
-          Card(child: Text('List of Txxx')),
+          Card(color: Colors.red, child: Text('List of Txxx')),
         ],
       ),
     );
