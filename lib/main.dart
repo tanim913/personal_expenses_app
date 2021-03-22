@@ -17,8 +17,7 @@ class MyHomePage extends StatelessWidget {
   final List<Transaction> transaction = [
     Transaction(
         title: 'New Phone', id: 'T1', amount: 899.00, date: DateTime.now()),
-    Transaction(
-        title: 'New PC', id: 'T2', amount: 889.0, date: DateTime.now())
+    Transaction(title: 'New PC', id: 'T2', amount: 889.0, date: DateTime.now())
   ];
   @override
   Widget build(BuildContext context) {
@@ -66,9 +65,14 @@ class MyHomePage extends StatelessWidget {
                       Text(
                         tx.title,
                         style: TextStyle(
-                            fontSize: 16, fontWeight: FontWeight.bold, color: Colors.indigoAccent),
+                            fontSize: 16,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.black),
                       ),
-                      Text(tx.date.toString(), style: TextStyle (color: Colors.grey),),
+                      Text(
+                        tx.date.toString(),
+                        style: TextStyle(color: Colors.grey),
+                      ),
                     ],
                   ),
                 ],
